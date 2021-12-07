@@ -8,7 +8,10 @@ fun main() {
 }
 
 fun fishCountAfter(days: Int): Long {
-    val input = File("src/main/kotlin/day06/day06-input.txt").readText().split(",").map { it.toInt() }
+    val input = File("src/main/kotlin/day06/day06-input.txt")
+        .readText()
+        .split(",")
+        .map { it.toInt() }
 
     val fishCountOnDay = LongArray(9)
     input.forEach {
